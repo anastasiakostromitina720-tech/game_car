@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D-гонка — трасса и финиш</title>
+  <link rel="stylesheet" href="racing-3d.css" />
+</head>
+<body>
+  <div id="viewport" aria-label="3D-вид с трассы"></div>
+  <div class="ui" id="hud-3d">
+    <div class="hud-left">
+      <span>Круг: <strong id="lap-3d">1 / 3</strong></span>
+      <span>Место: <strong id="place-3d">1</strong></span>
+    </div>
+    <div class="hud-right">
+      <span><strong id="time-3d">Время: 0:00.00</strong></span>
+      <span id="best-3d">Лучш. время: —</span>
+    </div>
+  </div>
+  <p id="hint">W/S или ↑/↓ — газ и тормоз · A/D или ←/→ — в сторону · цель: 3 круга, первым на финише по прогрессу</p>
+  <div id="countdown" class="hidden" aria-hidden="true">3</div>
+  <div id="overlay-3d">
+    <h1>Трасса 3D</h1>
+    <p>Закрытая петля: старт, три круга, финиш. Три соперника, камера сзади, место и время в углу.</p>
+    <p>Если страница открыта с диска и модуль не грузится — запусти локальный сервер в папке (например, <code>npx serve</code>).</p>
+    <button type="button" id="btn-3d">Старт</button>
+    <p class="nav-foot"><a href="classic-2d.html">Простая 2D-игра</a></p>
+    <p id="overlay-text-3d" class="nav-foot" style="margin-top:1rem;color:#b8b8c8"></p>
+  </div>
+  <script type="module" src="racing-3d.js"></script>
+</body>
+</html>

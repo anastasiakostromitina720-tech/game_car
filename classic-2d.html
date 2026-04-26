@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Классика: объезжай машины</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Объезжай машины</h1>
+      <p class="hint">← → или A D. <a href="index.html" style="color:#7ec8ff">К 3D-гонке</a></p>
+    </header>
+    <div class="game-panel">
+      <div class="hud">
+        <span>Очки: <strong id="score">0</strong></span>
+        <span>Рекорд: <strong id="best">0</strong></span>
+      </div>
+      <canvas id="game" width="400" height="600" aria-label="Игровое поле"></canvas>
+      <div id="overlay" class="overlay hidden">
+        <p id="msg">Врезались!</p>
+        <button type="button" id="btn-restart">Ещё раз</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
